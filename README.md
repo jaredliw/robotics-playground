@@ -1,4 +1,3 @@
 # robotics-playground
 
-My random code and competition solutions regarding to robotics.
-
+My random code and competition solutions related to robotics (Micro:bit and Arduino).
