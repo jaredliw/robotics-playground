@@ -4,11 +4,14 @@ PikaBot bot;
 
 void setup() {
     bot.tempo = 180;
-    bot.play("e5:8 e5 r e5 r c5 e5:4 g5");
+    bot.play("e5:8 e r e r c e:4 g");
     delay(1000);
     bot.resetTempo();
-    String repeated = "g5:8 g5 g5 g5:16 g5:8 g5:16 g5:8";
-    bot.play("d5 e5 " + repeated + " d5 e5 " + repeated + " d5 e5 " + repeated + " g5:8 g5 f5:2");
+    String repeated = "g:8 g g g:16 g:8 g:16 g:8";
+    bot.play("d5 e " + repeated + " d e " + repeated + " d e " + repeated + " g:8 g f:2");
+    delay(1000);
+    String repeated2 = "g:8 g a:4 g";
+    bot.play(repeated2 + " c5 b4:2 " + repeated2 + " d5 c:2 g4:8 g g5:4 e c b4 a f5:8 f e:4 c d c:2");
 }
 
 void loop() {
